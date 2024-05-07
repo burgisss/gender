@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+<div class="container login-container">
+    <div class="form-container" id="loginForm">
+        <h2>Login</h2>
+        <form action="Home_Page.html" method="GET">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" class="form-control login-input" id="loginEmail" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control login-input" id="loginPassword" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary login-btn">Login</button>
+        </form>
+    </div>
+    
+    <div id="signupForm" class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="Terms.html" method="GET">
+            <div class="form-group">
+                <label for="signupUsername">Username</label>
+                <input type="text" class="form-control signup-input" id="signupUsername" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input type="email" class="form-control signup-input" id="signupEmail" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" class="form-control signup-input" id="signupPassword" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary signup-btn">Sign Up</button>
+        </form>
+        <p class="mt-3">Already have an account? <a href="#" id="showLoginForm" class="login-link">Login Here</a></p>
+    </div>
+</div>
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+
+    <script>
+        // JavaScript to toggle the visibility of the login form
+        document.getElementById('showLoginForm').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            document.getElementById('loginForm').style.display = 'block'; // Show the login form
+            document.getElementById('signupForm').style.display = 'none'; // Hide the sign-up form
+        });
+    </script>
+</body>
+</html>
+

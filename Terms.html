@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Agreement and Privacy Policy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>User Agreement and Privacy Policy</h2>
+  <div id="agreement">
+    <p>Welcome to Equality Hub!</p>
+    <p>By accessing or using our website, you agree to be bound by the following terms and conditions:</p>
+    <ol>
+      <li>Acceptance of Terms: You agree to these terms and conditions by accessing or using our website. If you do not agree with any of these terms, you are prohibited from using or accessing this site.</li>
+      <li>Use License: Permission is granted to temporarily download one copy of the materials (information or software) on our website for personal, non-commercial transitory viewing only.</li>
+      <li>Limitations: Under no circumstances shall Equality Hub be liable for any damages arising out of the use or inability to use the materials on our website.</li>
+      <li>Revisions: The materials appearing on our website could include technical, typographical, or photographic errors. We do not warrant that any of the materials on our website are accurate, complete, or current.</li>
+      <li>Governing Law: Any claim relating to our website shall be governed by the laws of the Philippines, without regard to its conflict of law provisions.</li>
+      <li>Modifications: Equality Hub may revise these terms of service for its website at any time without notice. By using this website, you agree to be bound by the current version of these terms of service.</li>
+    </ol>
+    <p>Privacy Policy</p>
+    <p>Equality Hub is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information.</p>
+    <ol>
+      <li>Information We Collect: We may collect personal information such as your name, email address, and phone number when you voluntarily submit it to us.</li>
+      <li>Use of Information: We may use the information we collect from you to personalize your experience and to provide you with our services.</li>
+      <li>Sharing of Information: We do not sell, trade, or otherwise transfer your personal information to third parties without your consent.</li>
+      <li>Security: We implement a variety of security measures to maintain the safety of your personal information.</li>
+      <li>Cookies: We use cookies to enhance your experience on our website. You can choose to disable cookies through your browser settings.</li>
+      <li>Changes to Privacy Policy: We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</li>
+    </ol>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="agreeCheckbox">
+      <label class="form-check-label" for="agreeCheckbox">I agree to the terms and conditions</label>
+    </div>
+    <button id="agreeBtn" class="btn btn" disabled>Agree and Continue</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById("agreeCheckbox").addEventListener("change", function() {
+    document.getElementById("agreeBtn").disabled = !this.checked;
+  });
+
+  document.getElementById("agreeBtn").addEventListener("click", function() {
+    // Redirect to the home page
+    window.location.href = "Home_Page.html";
+  });
+</script>
+
+</body>
+</html>
