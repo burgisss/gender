@@ -1,0 +1,66 @@
+/* CSS for basic styling, adjust as needed */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(85, 0, 85), rgb(187, 107, 120));
+}
+
+.container {
+    max-width: 300px; /* Decreased the max-width of the container */
+    margin: 100px auto; /* Adjusted the margin */
+    backdrop-filter: blur(10px); /* Apply blur effect only to the container */
+    border-radius: 10px; /* Optional: Add rounded corners for a nicer look */
+    padding: 15px; /* Decreased the padding */
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: Fallback background color for browsers that don't support backdrop-filter */
+}
+
+.form-container {
+    display: none; /* Hide the form by default */
+}
+
+h2, h1, p {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; /* Added margin-bottom for better spacing */
+}
+
+.btn-primary {
+    background-color: purple; /* Set the background color of the primary buttons to violet */
+    border-color: purple; /* Set the border color of the primary buttons to violet */
+    border-radius: 20px;
+    padding: 8px 15px; /* Adjusted the padding */
+    font-size: 16px; /* Adjusted the font size */
+}
+
+.btn-primary:hover {
+    background-color: violet; /* Set the background color of the primary buttons to dark violet on hover */
+    border-color: violet; /* Set the border color of the primary buttons to dark violet on hover */
+}
+
+#showLoginForm {
+    color: purple; /* Set the color of the "Login Here" link to violet */
+}
+
+#showLoginForm:hover {
+    color: violet; /* Set the color of the "Login Here" link to dark violet on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+    .container {
+        max-width: 90%; /* Adjust the maximum width for smaller screens */
+    }
+
+    /* Adjust width and height of container contents */
+    h2, h1, p {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .btn-primary {
+        padding: 6px 12px; /* Adjusted the padding */
+        font-size: 14px; /* Adjusted the font size */
+    }
+      /* Adjust placeholder text size */
+      input[type="text"]::placeholder, input[type="password"]::placeholder {
+        font-size: 12px; /* Reduce placeholder text size */
+    }
+}

@@ -1,0 +1,97 @@
+    /* CSS for basic styling, adjust as needed */
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: linear-gradient(to right, rgb(85, 0, 85), rgb(187, 107, 120));
+      }
+      
+      .container {
+        max-width: 900px;
+        margin-top: 50px;
+        backdrop-filter: blur(10px); /* Apply blur effect only to the container */
+        border-radius: 10px; /* Optional: Add rounded corners for a nicer look */
+        padding: 20px; /* Optional: Add padding for better readability */
+        background-color: rgba(255, 255, 255, 0.2); /* Optional: Fallback background color for browsers that don't support backdrop-filter */
+      }
+      
+      .form-container {
+        display: none;
+        /* Remove backdrop-filter and background-color from here */
+      }
+      
+      h2, h1, p {
+        font-weight: bold;
+        color: white;
+      }
+      
+      .btn {
+        background-color: purple; /* Set the background color of the primary buttons to violet */
+        border-color: purple; /* Set the border color of the primary buttons to violet */
+        border-radius: 20px;
+        color: white;
+      }
+      
+      .btn:hover {
+        background-color: violet; /* Set the background color of the primary buttons to dark violet on hover */
+        border-color: violet; /* Set the border color of the primary buttons to dark violet on hover */
+        color: white;
+      }
+      
+      #showLoginForm {
+        color: purple; /* Set the color of the "Login Here" link to violet */
+      }
+      
+      #showLoginForm:hover {
+        color: violet; /* Set the color of the "Login Here" link to dark violet on hover */
+      }
+      
+      .container {
+        max-width: 900px;
+        margin-top: 50px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Adjust font sizes for smaller screens */
+      @media (max-width: 768px) {
+        .container {
+          font-size: 14px;
+        }
+        h2 {
+          font-size: 24px; /* Adjust h2 font size for smaller screens */
+        }
+        .btn-primary {
+          font-size: 16px; /* Adjust button font size for smaller screens */
+          padding: 10px 20px; /* Adjust button padding for smaller screens */
+        }
+      }
+      
+      /* Adjust font sizes further for even smaller screens */
+      @media (max-width: 576px) {
+        .container {
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 20px; /* Adjust h2 font size for even smaller screens */
+        }
+        .btn-primary {
+          font-size: 14px; /* Adjust button font size for even smaller screens */
+          padding: 8px 16px; /* Adjust button padding for even smaller screens */
+        }
+      }
+      
+      /* Adjust font sizes even further for very small screens */
+      @media (max-width: 400px) {
+        .container {
+          font-size: 10px;
+        }
+        h2 {
+          font-size: 18px; /* Adjust h2 font size for very small screens */
+        }
+        .btn-primary {
+          font-size: 12px; /* Adjust button font size for very small screens */
+          padding: 6px 12px; /* Adjust button padding for very small screens */
+        }
+      }
+      
